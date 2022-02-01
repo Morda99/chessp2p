@@ -1,0 +1,34 @@
+<HTML>
+	<HEAD>
+		<title>Chess</title>
+		
+		<script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="chess.js"></script>
+		<script type="text/babel" src="chess.js"></script>
+		<LINK rel="stylesheet" type="text/css" href="index.css">
+	</HEAD>
+	<BODY>	
+		<div class = "peer">
+			<p id="para"></p>
+			<p id="para2"></p>
+			<div id="remote">
+			Other peer: <input type="text" id="otherPeer"> <button type="button" id="connect">Connect</button> 
+			</div>
+			<button type = "button" id = "rivincita">Rivincita</button>
+		</div>
+		<p></p>
+
+		<div id="root" class = "root"></div>
+		
+	
+		<!-- Carica React. -->
+		<!-- Nota: quando rilasci il codice in produzione, sostituisci "development.js" con "production.min.js". -->
+		<script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Carica il nostro componente React. -->
+		<script type="text/babel" src="chess.js"></script>
+   	</BODY>
+
+</HTML>
